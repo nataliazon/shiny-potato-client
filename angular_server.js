@@ -46,5 +46,5 @@ https.createServer({
     key: fs.readFileSync(keysDir + 'key.pem'),
     cert: fs.readFileSync(keysDir + 'cert.pem'),
     passphrase: 'dalek'
-}, app).listen(8080);
+}, app).listen(process.env.PORT || 8080);
 console.log(" Listen for requests at the PORT specified by env variables or the default Heroku port, which is 8080.");
