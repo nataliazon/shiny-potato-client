@@ -1,0 +1,43 @@
+.page-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas: " . title . "
+                         " . launchers . "
+                         " . footer . ";
+    height: 100%;
+
+    .page-title-container{
+        grid-area: title;
+        text-align: center;
+    }
+
+    .game-footer{
+        grid-area: footer;
+    }
+}
+
+
+
+.game-title{
+    color: rosybrown;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0px;
+
+}
+
+.back-button{
+    width: 30vw;
+    border: 2px solid navajowhite;
+    background-color: palevioletred;
+    color: navajowhite;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    text-align: center;
+
+    &:hover{
+        background-color: purple;
+    }
+}

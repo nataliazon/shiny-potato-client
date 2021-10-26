@@ -1,0 +1,48 @@
+.page-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas: " . title . "
+                         " . launchers . "
+                         " . footer . ";
+    height: 100%;
+
+    .page-title-container{
+        grid-area: title;
+        text-align: center;
+    }
+
+    .game-launchers-container{
+        grid-area: launchers;
+    }
+}
+
+
+.page-title{
+    color: rosybrown;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0px;
+
+}
+
+.game-launch-button {
+    width: 100%;
+    display: block;
+    border: 2px solid navajowhite;
+    background-color: palevioletred;
+    color: navajowhite;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover{
+        background-color: purple;
+    }
+}
+
+p {
+    margin-top: 0px;
+}
