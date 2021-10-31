@@ -1,0 +1,7 @@
+<button (click)="requestRoom()">Request new room</button>
+
+<p>Available rooms:</p>
+<p *ngFor="let availableRoom of availableRooms">{{availableRoom}}</p>
+<hr>
+<p>Taken rooms:</p>
+<p *ngFor="let takenRoom of takenRooms">{{takenRoom}}</p>
